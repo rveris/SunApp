@@ -1,0 +1,82 @@
+[
+    {
+        "name" : "Veris",
+        "firstName" : "Ruben",
+        "idCardNo" : "591-6688372-33",
+        "nrNo" : "92.01.21-307.32",
+        "skinType" : 3,
+        "address" : {
+            "street" : "Larum",
+            "houseNo" : 17,
+            "bus" : 2,
+            "zipCode" : "2260",
+            "location" : "Geel",
+            "country" : "Belgium"
+        },
+        "email" : "contact@rveris.be",
+        "tel" : "0498808794",
+        "reason" : 3,
+        "pigment" : 0,
+        "skinAnalysis" : [
+                "2017-05-18T09:40:00"
+        ],
+        "sessions" : [
+            {
+                "date" : "2017-05-18T09:40:00",
+                "sessionDuration" : 10,
+                "signature" : "x"
+            },
+            {
+                "date" : "2017-06-17T00:30:00",
+                "sessionDuration" : 15,
+                "signature" : "x"
+            },
+            {
+                "date" : "2017-06-20T08:00:00",
+                "sessionDuration" : 20,
+                "signature" : "x"
+            }
+        ]
+    },
+    {
+        "name" : "Detaille",
+        "firstName" : "Audrey",
+        "idCardNo" : "xxx-xxxxxxx-xx",
+        "nrNo" : "xx.xx.xx-xxx.xx",
+        "skinType" : 3,
+        "address" : {
+            "street" : "Kapellestraat",
+            "houseNo" : 10,
+            "bus" : 0,
+            "zipCode" : "2431",
+            "location" : "Veerle-Laakdal",
+            "country" : "Belgium"
+        },
+        "email" : "audreydetaille@telenet.be",
+        "tel" : "0497568796",
+        "reason" : 3,
+        "pigment" : 0,
+        "skinAnalysis" : [
+                "2017-06-16T00:30:00",
+                "2017-06-17T00:00:30",
+                "2017-07-20T08:30:40"
+        ],
+        "sessions" : [
+            {
+                "date" : "2017-06-16T00:30:00",
+                "sessionDuration" : 10,
+                "signature" : "x"
+            },
+            {
+                "date" : "2017-06-17T00:00:30",
+                "sessionDuration" : 15,
+                "signature" : "x"
+            },
+            {
+                "date" : "2017-07-20T08:30:40",
+                "sessionDuration" : 20,
+                "signature" : "x"
+            }
+        ]
+    }
+]

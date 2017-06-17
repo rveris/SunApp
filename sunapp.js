@@ -1,3 +1,4 @@
+require('./api/data/db.js');
 var express = require('express');
 var app = express();
 var path = require('path');
@@ -15,4 +16,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('./api', routes);
+app.use('/api', routes);
+
+var server = app.listen(app.get('port'), function() {
+    var port = server.address().port;
+    console.log('Magic happens on port ' + port);
+});
