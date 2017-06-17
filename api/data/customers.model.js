@@ -30,17 +30,17 @@ var addressSchema = new mongoose.Schema({
 var sessionSchema = new mongoose.Schema({
     date : {
         type : Date,
-        required : true
+        required : false
     },
     sessionDuration : {
         type : Number,
-        required : true,
+        required : false,
         min : 5,
         max : 25
     },
     signature : {
         type : String,
-        required : true
+        required : false
     }
 });
 
