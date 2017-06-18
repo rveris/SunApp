@@ -1,12 +1,13 @@
-<html ng-app>
+<html ng-app="sunapp">
 
     <head>
 
-        <link href="/css/bootstrap-min.css" rel="stylesheet"></link>
-        <script src="/css/bootstrap.min.js"></script>
+        <title>La Perla - Sun App</title>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+        <script src="js/bootstrap.min.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>La Perla - Sun App</title>
 
     </head>
 
@@ -14,11 +15,10 @@
         
         <div ng-view></div>
         
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
-        <script src="sunapp.js"></script>
-        <script src="/api/controllers/customers.controllers.js"></script>
-        <script src="/api/controllers/sessions.controllers.js"></script>
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-route/angular-route.js"></script>
+        <script src="angular-app/app.js"></script>
+        <script src="angular-app/customers-list/customers-list-controller.js"></script>
 
     </body>
 
