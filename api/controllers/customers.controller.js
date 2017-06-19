@@ -1,3 +1,5 @@
+//var customerData = require();
+
 module.exports.customersGetAll = function(req, res) {
     console.log("GET all the customers!");
     console.log(req.query);
