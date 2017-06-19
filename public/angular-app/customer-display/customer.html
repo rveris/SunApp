@@ -1,0 +1,45 @@
+<h1>{{ vm.customer.firstName + ' ' + vm.customer.name }}</h1>
+<br>
+<table>
+    <tr>
+        <th>Identiteiskaart nummer: {{ vm.customer.idCardNo }}</th>
+    </tr>
+    <tr>
+        <th>Rijksregisternummer: {{ vm.customer.nrNo }}</th>
+    </tr>
+    <tr>
+        <th>Straat: {{ vm.customer.address.street }}</th>
+        <th>Huisnummer: {{ vm.customer.address.houseNo }}</th>
+    </tr>
+    <tr>
+        <th>Postcode: {{ vm.customer.address.zipCode }}</th>
+        <th>Woonplaats: {{ vm.customer.address.location }}</th>
+    </tr>
+    <tr>
+        <th>Email: {{ vm.customer.email }}</th>
+    </tr>
+    <tr>
+        <th>Telefoon: {{ vm.customer.tel }}</th>
+    </tr>
+    <tr>
+        <th>Komt zonnen voor: {{ vm.customer.reason }}</th>
+    </tr>
+    <tr>
+        <th>Heeft last van pigmentvlekken: {{ vm.customer.pigment }}</th>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>Sessies</th>
+    </tr>
+    <tr>
+        <th>Datum</th>
+        <th>Sessie</th>
+        <th>handtekening</th>
+    </tr>
+    <tr ng-repeat="session in vm.customer.sessions">
+        <th>{{ session.date }}</th>
+        <th>{{ session.sessionDuration }}</th>
+        <th>{{ session.signature }}</th>
+    </tr>
+</table>
