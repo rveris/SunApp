@@ -1,24 +1,29 @@
-angular.module('sunApp').factory('CustomerFactory', CustomerFactory);
+angular.module('sunapp').factory('customerDataFactory', customerDataFactory);
 
-function CustomerFactory($http){
+function customerDataFactory($http){
     return {
         getAllCustomers : getAllCustomers,
-        getOneCustomer  : getOneCustomer
+        getOneCustomer : getOneCustomer,
+        addOneCustomer : addOneCustomer 
     };
 
     function getAllCustomers() {
-        return $http.get('http://localhost:3000/customers').then(complete).catch(failed);
+        return $http.get('/api/customers').then(complete).catch(failed);
     }
     
     function getOneCustomer(customerId) {
-        return $http.get('http://localhost:3000/customers/' + customerId).then(complete).catch(failed);
+        return $http.get('/api/customers/' + customerId).then(complete).catch(failed);
+    }
+
+    function addOneCustomer(customer){
+        
     }
     
-    function getAllCustomers(response) {
-        return response.data;
+    function complete(response) {
+        return response;
     }
     
-    function getAllCustomers(error) {
-        return error.statusText;
+    function failed(error) {
+        console.log(error.statusText);
     }
 }

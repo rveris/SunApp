@@ -44,6 +44,13 @@ var sessionSchema = new mongoose.Schema({
     }
 });
 
+var skinAnalysis = new mongoose.Schema({
+    skinDate : {
+        type: Date,
+        required: false
+    }
+})
+
 var customerSchema = new mongoose.Schema({
     name : {
         type : String,
@@ -80,7 +87,9 @@ var customerSchema = new mongoose.Schema({
     },
     reason : {
         type : Number,
-        required : true
+        required : true,
+        min: 1,
+        max: 3
     },
     pigment : {
         type : Number,
@@ -88,10 +97,7 @@ var customerSchema = new mongoose.Schema({
         min : 0,
         max : 1
     },
-    skinAnalysis : [{
-        type : Date,
-        required : false
-    }],
+    skinAnalysis : [skinAnalysis],
     sessions : [sessionSchema]
 });
 

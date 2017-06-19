@@ -110,7 +110,7 @@ module.exports.customersAddOne = function(req, res){
             tel : req.body.tel,
             reason : parseInt(req.body.reason, 10),
             pigment : parseInt(req.body.pigment, 10),
-            skinAnalysis : req.body.skinAnalysis,
+            //skinAnalysis : [{skinDate : req.body.skinDate}],
             sessions : [{
                 date : req.body.date,
                 sessionDuration : parseInt(req.body.sessionDuration, 10),
@@ -175,8 +175,7 @@ module.exports.customersUpdateOne = function(req, res){
                 doc.tel = req.body.tel;
                 doc.reason = parseInt(req.body.reason, 10);
                 doc.pigment = parseInt(req.body.pigment, 10);
-                doc.skinAnalysis = req.body.skinAnalysis;
-            
+                //doc.skinAnalysis = [{skinDate : req.body.skinDate}],            
                 doc.save(function(err, customerUpdated){
                     if (err) {
                         res

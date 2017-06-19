@@ -1,0 +1,5 @@
+<h1>{{ vm.title }}</h1>
+<ul>
+  <li ng-repeat="customer in vm.customers"><a ng-href="#!/customer/{{ customer._id }}">{{ customer.name }}</a></li>
+</ul>
+<a href="#!/newCustomer" class="btn btn-default">Nieuwe bezoeker</a>
