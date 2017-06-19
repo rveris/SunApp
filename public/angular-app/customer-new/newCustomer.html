@@ -1,3 +1,69 @@
-<form action="post">
-    <input class="">
+<form id="newCustomerForm">
+    <p>
+        <label>Achternaam</label><br>
+        <input type="text" name="name">
+    </p>
+    <p>
+        <label>Voornaam</label><br>
+        <input type="text" name="firstName">
+    </p>
+    <p>
+        <label>eID kaartnummer</label><br>
+        <input type="text" name="idCardNo">
+    </p>
+    <p>
+        <label>Rijksregisternummer</label><br>
+        <input type="text" name="nrNo">
+    </p>
+    <p>
+        <label>Straat</label><br>
+        <input type="text" name="street">
+    </p>
+    <p>
+        <label>Huisnummer</label><br>
+        <input type="text" name="houseNo">
+    </p>
+    <p>
+        <label>Bus</label><br>
+        <input type="text" name="bus">
+    </p>
+    <p>
+        <label>Postcode</label><br>
+        <input type="text" name="zipCode">
+    </p>
+    <p>
+        <label>Woonplaats</label><br>
+        <input type="text" name="location">
+    </p>
+    <p>
+        <label>Land</label><br>
+        <input type="text" name="country">
+    </p>
+    <p>
+        <label>Email</label><br>
+        <input type="text" name="email">
+    </p>
+    <p>
+        <label>Telefoon</label><br>
+        <input type="text" name="tel">
+    </p>
+    <p>
+        <label>Huidtype</label><br>
+        <input type="text" name="skinType">
+    </p>
+    <p>
+        <label>Pigmentvlekken</label><br>
+        <input type="text" name="pigment">
+    </p>
+    <p>
+        <input type="submit" value="Versturen">
+    </p>
+    <script>
+        var form = document.getElementById('newCustomerForm');
+        form.onsubmit = function(e) {
+            e.preventDefault();
+            console.log(form.name.value);
+        };
+    </script>
+
 </form>
